@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+        <title>Zodiac Sign</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="banner">
+            <video autoplay loop>
+                <source src="zodiac_animation.mp4" type="video/mp4">
+            </video>
+        <div class="content">
+            <div id="sign">
+                <h1>What is your Zodiac Sign?</h1>
+            </div>
+            <h2>Enter your Name.</h2>
+            <p>Name:<input type="text" id="name"></p>
+            <h3>Enter your Birthday.</h3>
+            <p>Month:<input type="number" id="month" min="1" max="12"></p>
+            <p>Day:<input type="number" id="day" min="1" max="31"></p>
+            <a id="animated" onclick="zodiac()"
+            class="button">Find your zodiac sign!</a>
+            <p id="photo"></p>
+            <p id= "username" style="display: none;">Hello <span id="Name"></span></p>
+            <p id="space" style="display: none;">Your Zodiac Sign is <span id="output"> </span> </p>
+
+            <p id="characteristic"></p>
+        </div>
+        </div>
+    </body>
+</html>
